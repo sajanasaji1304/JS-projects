@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap-grid.css">
+    <style>
+        @media(max-width: 576px){      
+            .demo{
+            background-color: brown;
+            max-width: 50%;
+            }
+        }
+        @media(min-width:576px){      
+            .demo{
+            background-color: chartreuse;
+            max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p class="demo">welcome</p>
+    <form action  method="post">
+        <div class="form-group">
+            <label for="">username</label>
+        </div>
+        <div>
+            <input type="text"    name="username"    placeholder="enter your username" class="form-control">
+        </div>
+        <div>
+            <label for="">passsword</label>
+        </div>
+        <div>
+            <input type="text"    name="password"    placeholder="enter your password" class="form-control">
+        </div>
+    </form>
+    <button class="btn btn-success">submit</button>
+    
+</body>
+</html>

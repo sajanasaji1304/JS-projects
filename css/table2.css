@@ -1,0 +1,17 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.tbl_head{
+    background-color: blue;
+
+}
+.tbl_head:hover{
+    background-color: chocolate;
+}
+.tbl_head2:nth-child(odd){
+    background-color: crimson;
+}
+.tbl_head2:hover:nth-child(even){
+    background-color: cyan;
+}

@@ -1,0 +1,24 @@
+.exp1_head{
+    background-color:blue;
+    width: 540px; height: 193px;
+    position: relative;
+    left:762px;
+    top:8px;
+           
+}
+.exp2_head{
+    background-color:blueviolet;
+    width: 540px; height: 227px;
+    position: relative;
+    left:390px;
+    top:-19px;
+           
+}
+.exp3_head{
+    background-color:cornflowerblue;
+    width: 520px; height: 204px;
+    position: relative;
+    bottom: 20px;
+    top:-45px;
+           
+}
