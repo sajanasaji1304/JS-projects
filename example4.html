@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <p>today</p>
+  <div>
+    <input type="text"    name="input" required>
+    <button click here></button>
+    <button onclick="create()">click here</button>
+  </div>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <p>tomorrow</p>
+  </div>
+  </div>
+<script>
+    count=0
+    function create(){
+        let input=document.createElement("input")
+        input.value=new Date()
+        documnet.body.appendChild(input)
+    }
+</script>
+
+</body>
+</html>

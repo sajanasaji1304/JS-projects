@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person={name:"anna",age:12,display:function(msg,date){
+        console.log(`${msg} name ${this.name} Age ${this.age} ${date}`)
+        }
+    }
+    let student={name:"arun",age:15}
+    person.display.call(student,"goodmorning",new Date())
+    person.display.apply(student,["goodmorning",new Date()])
+    let f=person.display.bind(student,"good eve")
+    f(new Date())
+    localStorage.setItem("name1","Amal")
+    localStorage.setItem("name2","anu")
+    localStorage.setItem("name3","rose")
+    console.log(localStorage.getItem("name1"))
+    console.log(localStorage.length)   
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='div1'>
+
+    </div>
+    <button onclick="call()">click here</button>
+    <script>
+        count=0
+        function create(){
+             count++
+            let para= document.createElement("p")
+            para.innerText=`user clicked the button for the ${count} time`
+            document.getElementById("div1").appendChild(para)
+        }
+        
+        function call(){
+            let input=document.createElement("input")
+            input.value=new Date()
+            document.body.appendChild(input)
+        }
+    </script>
+    
+</body>
+</html>

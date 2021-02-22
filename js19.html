@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check(){
+            var input="my phone number is 976543210 and my office no is (0484)-22242021 and fax number is (0484)-2285"
+            let reg=/^(\d{10}|\(0484\)-\d{7}|\d{4}-\d{7})/g
+            alert(input.match(reg))
+        }
+
+    </script>
+    <button onclick="check()"> check</button>
+    
+</body>
+</html>

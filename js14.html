@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let student={Name:"ann",age:13,rollno:1,greetings:function(){
+        console.log("hai all goodmorning")
+        console.log("Name =",this.Name)
+
+    },marks:[90,50,60],average:function(){
+        let sum=0
+    for (mark of this.marks){
+        sum+=mark
+    }
+    return sum/this.marks.length
+    }  
+    }
+    student.Name="anna rose"
+    student.address="h101 nyc"
+    console.log(student)
+    console.log(student.Name)
+    console.log(student.age)
+    console.log(student.rollno)
+    console.log(student.marks)
+    student.greetings()
+    x=student.average()
+    console.log(x)
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// function calculate(f,a,b){
+// console.log (f(a,b))
+// }
+// let add =function(x,y){
+//     return x+y
+// }
+// let sub=function(x,y){
+//     return x-y
+// }
+// calculate(add,10,20)
+// calculate(sub,90,70)
+// function outer(){
+// let k=123
+// function inner(){
+// console.log("inside function inner k=",k)
+// }
+// inner()
+// }
+// outer()
+// function volume(h)
+// {
+//     return function(b){
+//         return function(h){
+//             let l
+//         return l*b*h   
+//         }
+//     }
+// }
+// let data=volume(100)
+// let f=data(50)
+// console.log(f(10))
+
+var names=["ann","bibin","anna","asha"]
+let newarray=names.filter((name)=>{
+    if(name.startsWith("a")){
+        return name
+
+    }
+})
+alert(newarray)
+let s=[1,2,3,4,5,6]
+let arr2=s.map((item)=>{
+    return item**2
+
+})
+console.log(arr2)
+let result=s.reduce((x,y)=>{
+    return x+y
+})
+console.log(result)
+let result1=s.reduceRight((x,y)=>{
+    return x+y
+})
+console.log(result1)
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

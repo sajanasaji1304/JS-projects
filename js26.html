@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap-grid.css">
+</head>
+<body>
+    <script src="js/demo26.js">
+        function check(){
+            var x;
+            if(document.getElementsByName("gender")[0].checked){
+
+                x=document.getElementsByName("gender")[0].value
+
+            }else{
+                x=document.getElementsByName("gender")[1].value
+
+            }
+        }
+    </script>
+    
+    <div>
+        <label for="">Name</label>
+        <input type="text" id="name1" required>
+    </div>
+    <div>
+        <label for="">Id</label>
+        <input type="text" id="id1" required>
+
+    </div>
+    <div>
+        <label for="">Dept</label>
+        <select name="" id="dept1" required>
+            <option value="production">Production</option>
+            <option value="testing">Testing</option>
+            <option value="sales">Sales</option>
+        </select>
+
+    </div>
+    <div >
+         Male<input type="radio" value="male" id="gen1" name="gender" required>
+         Female<input type="radio" value="female" id="gen1" name="gender"  required>
+    </div>
+    <div>
+        <button onclick="see()">add</button>
+        <button onclick="view()">view</button>
+    </div>
+    <p id="pp"></p>
+</body>
+</html>

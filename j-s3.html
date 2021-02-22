@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="int" id="x">
+    <input type="int" id="y">
+    <button onclick=getname()> click</button>
+    <input type="int" id="result">
+    <script>
+        function getname(){
+    let a=document.getElementById("x").value
+    let b=document.getElementById("y").value
+    document.getElementById("result").value=parseInt(a)+parseInt(b)
+    }
+    </script>
+    
+</body>
+</html>

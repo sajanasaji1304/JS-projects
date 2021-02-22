@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+            <label for="">product id</label>
+        </div>
+        <div>
+            <input type="text"  id='prod'  name="product id"    placeholder="enter product id" required>
+        </div>
+        <div>
+            <label for="">name</label>
+        </div>
+        <div>
+            <input type="text"  id='nam'  name="name"    placeholder="enter the name of product">
+        </div>
+        <div>
+            <label for="">price</label>
+        </div>
+            <input type="number"  id='pri'  name="price"    placeholder="enter the price">
+        </div>
+        <button onclick="customer()">add</button>
+        <script>
+            // function customer(){
+        //     let a=document.getElementById("prod").value
+        //     let b=document.getElementById("nam").value
+        //     let c=document.getElementById("pri").value
+        // console.log(a)
+        // console.log(b)
+        // console.log(c)
+        productlist=[]
+    function customer(){
+        let prod=document.getElementById("prod").value
+        let nam=document.getElementById("nam").value
+        let pri=document.getElementById("pri").value
+        let product=new Product(prod,nam,pri)
+        console.log(product)
+        let r=arr.push(product)
+        console.log(r)
+    }
+    function Product(id,name,price){
+    this.prod=id
+    this.nam=name
+    this.pri=price
+    }
+    </script>
+    
+</body>
+</html>

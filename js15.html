@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let person={}
+    person.name="anna"
+    console.log(person)
+    person.display=function(){
+        console.log("hello ",this.name)
+    }
+    person.display()
+    let student=Object.create(person)
+    console.log(student)
+    student.rollno=43
+    student.marks=100
+    console.log(student)
+    let obj1={"name":"anna"}
+    let obj2={"name":"anna"}
+    //obj1=obj2
+    console.log(obj1==obj2)
+    obj1=Object.assign(obj2)
+    Object.freeze(student)          //freezes the object cannot add new one
+    student.marks=2000
+    student.batch="cse"
+    console.log(student)
+    console.log(Object.isFrozen(student))
+    Object.seal(student)                    //update student object(not adding new one)
+    console.log(Object.isSealed(student))   
+
+
+    
+
+
+</script>
+
+    
+</body>
+</html>

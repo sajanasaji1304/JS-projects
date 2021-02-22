@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap-grid.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-6">
+        <p> todo </p>
+            <input type="text"    name="input" class="form-control" id=task required>
+            <button onclick="addtask()">click here</button>
+             <div>
+                 <ul id="mytasks"></ul>
+             </div>
+          </div>
+        <div class="col-sm-6">
+        <p> tommorrow</p>
+        <script>
+            let todolist=[]
+            function addtask(){
+            let h=document.getElementById("task").value
+            todolist.push(h)
+            document.getElementById("task").value=""
+            console.log(h)
+            viewtodo()
+            }
+            function viewtodo(){
+                let s=""
+                for (i of todolist){
+                s+=`<li>${i}+<li><button onClick=removetask('${i}')>remove</button>`
+                }
+                document.getElementById("mytasks").innerHTML=s
+
+            //     for(i of todolist){
+            //       let li=document.createElement("li")
+            //       li.innerHTML=i
+            //       document.getElementById("mytasks").appendChild(li)
+                
+            //   }
+            // function removetask(){
+
+            // }
+         }
+         function removetask(data){
+            console.log("task to be removed",data)
+            console.log(todolist.indexOf())
+            todolist
+
+
+
+         }
+
+        </script>
+    
+</body>
+</html>
